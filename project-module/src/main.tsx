@@ -1,10 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { HeaderApp } from './react-components/Header'
+import { NavigateApp } from './react-components/Navigation'
+import "./styles.scss";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HeaderApp/>
+    <NavigateApp/>
   </StrictMode>,
 )
 
