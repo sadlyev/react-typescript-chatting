@@ -1,11 +1,17 @@
 import { useState } from "react"
 
 export const HeaderApp = () => {
-    
+
+    const [count,  setCounter] = useState<number>(0)
+
+    const [inputValue,  setValue] = useState<string>("")
 
     const  handleTap = () => {
-         console.log("cliked")
+         setCounter(prev => prev + 1)
     }
+
+
+
 
     return (
         <header className="header">
@@ -14,7 +20,7 @@ export const HeaderApp = () => {
                     <h2 className="header_text">TechStore</h2>
                     <div className="header_search">
                         <label className="header_search-label">
-                            <input className="header_search-input" placeholder="Search products"></input>
+                            <input className="header_search-input" placeholder="Search products" onChange={(e) => setValue(e.target.value)}></input>
                         </label>
                     </div>
                     <div className="header_cart-logo" onClick={handleTap}>
@@ -26,5 +32,17 @@ export const HeaderApp = () => {
             </div>
 
         </header>
+    )
+}
+
+// menu that appears when cart icon is clicked
+const navMenu = () => {
+
+    
+
+    return (
+        <div>
+
+        </div>
     )
 }

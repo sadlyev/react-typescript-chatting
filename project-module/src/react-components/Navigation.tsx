@@ -4,6 +4,7 @@ type NavigateProps = {
     arg?: string
 }
 export const  NavigateApp = ({arg = "user"} : NavigateProps)  => {
+    
     switch (arg) {
         case "user":
             return <HeaderApp/>

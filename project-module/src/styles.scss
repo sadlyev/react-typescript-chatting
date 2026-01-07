@@ -1,2 +1,7 @@
-@use "./scss/header";
-@use "./scss/settings";
+// blocks
+
+@use "./scss/blocks/header";
+
+// global
+@use "./scss/global/settings";
+@use "./scss/global/container";
