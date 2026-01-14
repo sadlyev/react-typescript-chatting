@@ -1,0 +1,49 @@
+.register_panel {
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+  max-width: 400px;
+  min-width: 350px;
+  min-height: 400px;
+  max-height: 400px;
+  padding: 20px;
+  border: 1px solid #cecece;
+  border-radius: 10px;
+}
+
+.register_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 30px;
+}
+
+.register_panel-icon {
+  background-color: #000000;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 50%;
+  margin: 0 0 20px;
+}
+
+.register_panel-title {
+  margin: 0;
+}
+
+.register_panel-description {
+  margin: 0;
+}
+
+.register_form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.register_form-inner {
+  display: flex;
+  flex-direction: column;
+}
