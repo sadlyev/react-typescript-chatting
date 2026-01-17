@@ -1,7 +1,19 @@
-
+import { useEffect, useState } from "react";
 
 
 export const RegisterApp = () => {
+
+  const [emailText, setemailText] = useState("")
+  const [passwordText, setpasswordTest] = useState(undefined)
+
+  function handleEmailInput(ev: any) {
+    return setemailText(ev.target.value)
+  }
+
+  function handlePasswordInput(ev1: any) {
+    return setpasswordTest(ev1.target.avlue)
+  }
+  
   return (
     <div className="register_panel">
       <div className="register_wrapper">
@@ -24,6 +36,8 @@ export const RegisterApp = () => {
               <input
                 className="register_form-input"
                 placeholder="your@example.com"
+                value={emailText}
+                onChange={handleEmailInput}
               ></input>
             </label>
           </div>
@@ -40,6 +54,8 @@ export const RegisterApp = () => {
               <input
                 className="register_form-input"
                 placeholder="&#8901;&#8901;&#8901;&#8901;&#8901;&#8901;&#8901;&#8901;"
+                value={passwordText}
+                onChange={handlePasswordInput}
               ></input>
             </label>
           </div>
