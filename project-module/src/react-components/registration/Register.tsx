@@ -9,20 +9,35 @@ type changePage ={
 export const RegisterApp = ({page} : changePage) => {
 
      const [emailText, setemailText] = useState("")
-  const [passwordText, setpasswordTest] = useState(undefined)
-  const [confirmPassword, setConfirmPassword] = useState(undefined)
+  const [passwordText, setpasswordTest] = useState("")
+  const [confirmPassword, setConfirmPassword] = useState("")
+  const [fullName, setFullName] = useState("")
 
   function handleEmailInput(ev: any) {
     return setemailText(ev.target.value)
   }
 
   function handlePasswordInput(ev1: any) {
-    return setpasswordTest(ev1.target.avlue)
+    return setpasswordTest(ev1.target.value)
   }
 
   function handleConfirmPasswordInput(ev2: any) {
     return setConfirmPassword(ev2.target.value)
   }
+
+  function handleFullName(ev4: any) {
+    return setFullName(ev4.target.value)
+  }
+
+  function handleSubmit(e: any) {
+    e.preventDefault()
+
+      const data = new FormData(e.currentTarget)
+    console.log(Object.values(data))
+    e.currentTarget.reset()
+  }
+
+  // this is where i stopped
 
     return (
     <div className="register_panel">
@@ -35,7 +50,7 @@ export const RegisterApp = ({page} : changePage) => {
           Sign up to start your shopping journey
         </p>
       </div>
-      <form className="register_form">
+      <form className="register_form" onSubmit={handleSubmit}>
         <div className="register_form-wrapper">
            <div className="register_form-inner">
             <span className="register_form-title">Full Name</span>
@@ -46,8 +61,10 @@ export const RegisterApp = ({page} : changePage) => {
               <input
                 className="register_form-input"
                 placeholder="John Doe"
-                value={emailText}
-                onChange={handleEmailInput}
+                value={fullName}
+                onChange={handleFullName}
+                required
+                name="fullName"
               ></input>
             </label>
           </div>
@@ -62,6 +79,8 @@ export const RegisterApp = ({page} : changePage) => {
                 placeholder="your@example.com"
                 value={emailText}
                 onChange={handleEmailInput}
+                required
+                 name="fullEmail"
               ></input>
             </label>
           </div>
@@ -80,6 +99,8 @@ export const RegisterApp = ({page} : changePage) => {
                 placeholder="&#8901;&#8901;&#8901;&#8901;&#8901;&#8901;&#8901;&#8901;"
                 value={passwordText}
                 onChange={handlePasswordInput}
+                required
+                 name="fullPassword"
               ></input>
             </label>
           </div>
@@ -98,13 +119,15 @@ export const RegisterApp = ({page} : changePage) => {
                 placeholder="&#8901;&#8901;&#8901;&#8901;&#8901;&#8901;&#8901;&#8901;"
                 value={confirmPassword}
                 onChange={handleConfirmPasswordInput}
+                required
+                 name="confirmPassword"
               ></input>
             </label>
           </div>
         </div>
 
         <div className="register_form-inner">
-          <button className="register_form-submit">Create Account</button>
+          <button className="register_form-submit" type={"submit"}>Create Account</button>
         </div>
 
         <div className="register_form-inner-wrapper">
