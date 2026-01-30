@@ -7,9 +7,9 @@ interface INputFeildProps {
 
 export const InputField:FC<INputFeildProps> = ({label, children,}) => {
     return (
-        <form>
+        <label>
             <span>{label}</span>
             {children}
-        </form>
+        </label>
     )
 }
