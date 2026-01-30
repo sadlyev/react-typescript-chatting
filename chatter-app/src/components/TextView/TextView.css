@@ -1,0 +1,28 @@
+.textview_wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.tetview_text {
+  background-color: #f3f4f6;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 5px;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.textview_inner {
+  display: flex;
+  gap: 20px;
+}
+
+.textview_sm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

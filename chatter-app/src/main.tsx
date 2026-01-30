@@ -8,6 +8,6 @@ import "./main.css"
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <AppHeader />
-  <TextView username={"Asilbek"} text={"im here for the first time"}/>
+  <TextView username={"Asilbek"} text={"im here for the first time".repeat(20)}/>
   </StrictMode>,
 )

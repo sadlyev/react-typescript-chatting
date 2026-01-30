@@ -1,11 +1,9 @@
 import { UserView } from "../UserView/UserView";
+import "./TextView.css"
 
  const formatDate = (timestamp: number) => {
   const date = new Date(timestamp);
   return date.toLocaleString(undefined, {
-    day: "2-digit",
-    month: "short",
-    year: "numeric",
     hour: "2-digit",
     minute: "2-digit",
   });
@@ -14,11 +12,11 @@ import { UserView } from "../UserView/UserView";
 
 export const TextView = ({ username, text}: {text: string, username: string}) => {
     return (
-        <div>
+        <div className="textview_wrapper">
             <UserView username={username}/>
-            <div>
-                <div><span>{username}</span><span>{formatDate(Date.now())}</span></div>
-                <p>{text}</p>
+            <div className="textview_sm">
+                <div className="textview_inner"><span>{username}</span><span>{formatDate(Date.now())}</span></div>
+                <p className="tetview_text">{text}</p>
             </div>
         </div>
     )
