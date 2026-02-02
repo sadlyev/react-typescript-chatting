@@ -28,7 +28,11 @@ export const SearchField = () => {
 
   function formSubmit(e: React.FormEvent<HTMLFormElement>) {
   e.preventDefault();
-  myMutation.mutate();
+ 
+
+  if (!nameState && !textState) return
+
+   myMutation.mutate();
 
   setNameState("")
   setTextState("")
