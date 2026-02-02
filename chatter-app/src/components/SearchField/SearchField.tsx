@@ -18,7 +18,7 @@ export const SearchField = () => {
   }
 
   const myMutation = useMutation({
-    mutationFn: () => PostNote(nameState, textState, performance.now().toString()),
+    mutationFn: () => PostNote(nameState, textState, Date.now(), performance.now().toString()),
     onSuccess() {
         queryClient.invalidateQueries({queryKey: ["notes"]})
     }

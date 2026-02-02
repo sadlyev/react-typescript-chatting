@@ -8,6 +8,7 @@ interface NoteProps {
     id: number,
     name: string,
     text: string
+    timing: number
 }
 
 export const TextViewList = () => {
@@ -22,7 +23,7 @@ queryClient)
         return (
             <ul className="notes_list">
                {myQuery.data.map((note: NoteProps) => (
-                <li key={note.id}><TextView username={note.name} text={note.text}/></li>
+                <li key={note.id}><TextView username={note.name} text={note.text} timing={note.timing}/></li>
                ))} 
             </ul>
         )
