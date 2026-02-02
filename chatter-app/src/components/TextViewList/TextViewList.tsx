@@ -7,7 +7,7 @@ import "./TextViewList.css"
 interface NoteProps {
     id: number,
     name: string,
-    text: string
+    text: string,
     timing: number
 }
 
