@@ -2,6 +2,13 @@ import { useQuery } from "@tanstack/react-query"
 import { queryClient } from "../QueryClient"
 import { FetchTextViewList } from "../../api/notes"
 import { TextView } from "../TextView/TextView"
+import "./TextViewList.css"
+
+interface NoteProps {
+    id: number,
+    name: string,
+    text: string
+}
 
 export const TextViewList = () => {
     const myQuery = useQuery({
@@ -13,9 +20,9 @@ queryClient)
     switch(myQuery.status) {
         case "success": 
         return (
-            <ul>
-               {myQuery.data.map((note) => (
-                <li><TextView username={note.name} text={note.text}/></li>
+            <ul className="notes_list">
+               {myQuery.data.map((note: NoteProps) => (
+                <li key={note.id}><TextView username={note.name} text={note.text}/></li>
                ))} 
             </ul>
         )

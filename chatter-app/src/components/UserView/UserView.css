@@ -1,10 +1,10 @@
 .user_logo-letter {
   width: 20px;
   height: 20px;
-  background-color: aqua;
   padding: 5px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
