@@ -4,12 +4,14 @@ import {Account} from "./components/Account/Account"
 import { TextViewList } from './components/TextViewList/TextViewList'
 
 
+
 import "./main.css"
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.querySelector('.root')!).render(
   <StrictMode>
-    <Account/>
-    <TextViewList/>
+
+      <Account/>
+    
     
   </StrictMode>,
 )

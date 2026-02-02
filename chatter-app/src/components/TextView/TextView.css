@@ -1,6 +1,7 @@
 .textview_wrapper {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .tetview_text {
@@ -12,17 +13,22 @@
   padding: 10px;
   margin: 0;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  max-width: 400px;
+  width: auto;
+  height: auto;
+  word-break: break-word;
 }
 
 .textview_inner {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .textview_sm {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  flex-wrap: wrap;
 }

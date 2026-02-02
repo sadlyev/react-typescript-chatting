@@ -1,0 +1,32 @@
+.input_wrapper {
+  background-color: #e7e7e7;
+  border-top: solid rgb(164, 164, 164) 1px;
+  padding: 14px 40px;
+  display: grid;
+  gap: 10px;
+  max-width: 700px;
+  width: 100%;
+  grid-template-columns: auto 70px; /* inputs | button */
+  grid-template-rows: auto auto;
+}
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.input_field {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.input_btn {
+  border: none;
+  background-color: #4c7df9;
+  color: #ffffff;
+  border-radius: 10px;
+}

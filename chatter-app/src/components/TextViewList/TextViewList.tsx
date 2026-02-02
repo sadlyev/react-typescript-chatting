@@ -13,7 +13,7 @@ interface NoteProps {
 export const TextViewList = () => {
     const myQuery = useQuery({
         queryKey: ["notes"],
-        queryFn: () => FetchTextViewList() 
+        queryFn: FetchTextViewList,
     },
 queryClient)
 

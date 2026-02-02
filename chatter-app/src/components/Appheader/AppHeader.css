@@ -5,6 +5,7 @@
   color: white;
   align-items: center;
   gap: 10px;
+  width: 100%;
 }
 
 .header_title {

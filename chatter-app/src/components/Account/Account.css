@@ -1,0 +1,14 @@
+.account {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.account_messages {
+  height: 500px;
+  max-width: 700px;
+  width: 100%;
+}

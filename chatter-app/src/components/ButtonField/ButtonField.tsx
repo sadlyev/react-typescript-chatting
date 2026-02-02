@@ -1,9 +1,9 @@
 import type {HTMLAttributes, FC, ReactNode} from "react"
 
 interface ButtonFieldProps extends HTMLAttributes<HTMLButtonElement> {
-    isLoading: boolean,
+    isLoading?: boolean,
     type: "submit" | "reset" | "button"
-    children: ReactNode
+    children?: ReactNode
 }
     
 
