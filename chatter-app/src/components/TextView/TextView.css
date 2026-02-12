@@ -1,7 +1,7 @@
 .textview_wrapper {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .tetview_text {
