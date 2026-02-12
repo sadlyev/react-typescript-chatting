@@ -1,0 +1,1 @@
+export type NewsType = {id: number, title: string, tags: string[], text: string}
