@@ -6,6 +6,7 @@ import "./Account.css"
 export const Account = () => {
 
     return (
+        
         <div className={"account"}>
             <AppHeader/>
             <div className="account_messages">
