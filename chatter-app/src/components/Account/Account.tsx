@@ -1,19 +1,16 @@
-import {AppHeader} from "../Appheader/AppHeader"
-import { TextViewList } from '../TextViewList/TextViewList'
-import { SearchField } from "../SearchField/SearchField"
+
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import {ChatControl} from "../ChatComponents/ChatControl/ChatControl"
 import "./Account.css"
 
 export const Account = () => {
 
     return (
-        
-        <div className={"account"}>
-            <AppHeader/>
-            <div className="account_messages">
-        <TextViewList/>
-            </div>
-            
-            <SearchField/>
-        </div>
+        <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<ChatControl/>}></Route>
+        </Routes>
+        </BrowserRouter>
+       
     )
 }

@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query"
-import { queryClient } from "../QueryClient"
-import { FetchTextViewList } from "../../api/notes"
+import { queryClient } from "../../QueryClient"
+import { FetchTextViewList } from "../../../api/notes"
 import { TextView } from "../TextView/TextView"
 import "./TextViewList.css"
 

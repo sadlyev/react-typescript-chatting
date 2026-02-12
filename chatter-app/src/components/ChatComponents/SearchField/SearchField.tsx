@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./SearchField.css";
-import { ButtonField } from "../ButtonField/ButtonField";
+import { ButtonField } from "../../CommonComp/ButtonField/ButtonField";
 import { useMutation } from "@tanstack/react-query";
-import { queryClient } from "../QueryClient";
-import { PostNote } from "../../api/notes";
+import { queryClient } from "../../QueryClient";
+import { PostNote } from "../../../api/notes";
 
 export const SearchField = () => {
   const [nameState, setNameState] = useState("");

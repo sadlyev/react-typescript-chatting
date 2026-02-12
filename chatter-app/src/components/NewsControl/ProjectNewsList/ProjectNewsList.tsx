@@ -1,5 +1,5 @@
 import { useSearchParams } from "react-router-dom"
-import { NewsPost } from "../../api/news"
+import { NewsPost } from "../../../api/news" 
 import { Link } from "react-router-dom"
 
 export const NewsList = () => {
