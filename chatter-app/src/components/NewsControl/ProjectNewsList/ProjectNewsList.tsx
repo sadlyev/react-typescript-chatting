@@ -1,6 +1,7 @@
 import { useSearchParams } from "react-router-dom"
 import { NewsPost } from "../../../api/news" 
 import { Link } from "react-router-dom"
+import { ProjectNews } from "../ProjectNews/ProjectNews"
 
 export const NewsList = () => {
     const [searhParams, setSearchParams] = useSearchParams()
@@ -10,7 +11,7 @@ export const NewsList = () => {
     return (
         <div>
             {NewsPost.map((post, i) => (
-                <Link to={`/news${i}`}>{
+                <Link to={`/news/${i}`}>{
                     <div>
                         <p>{post.title}</p>
                         <p>{post.text}</p>
