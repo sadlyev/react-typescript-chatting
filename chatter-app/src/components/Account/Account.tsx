@@ -11,6 +11,7 @@ export const Account = () => {
         <BrowserRouter>
         <Routes>
             <Route path="/" element={<ChatControl/>}></Route>
+            <Route path="/chat" element={<ChatControl/>}></Route>
             <Route path="/news" element={<NewsList/>}></Route>
             <Route path="/news/:newsId" element={<ProjectNews/>}></Route>
         </Routes>
