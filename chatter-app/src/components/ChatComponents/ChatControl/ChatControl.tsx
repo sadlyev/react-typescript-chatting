@@ -3,7 +3,7 @@ import { TextViewList } from '../TextViewList/TextViewList'
 import { SearchField } from "../SearchField/SearchField"
 import "./ChaTControl.css"
 
-export const ChatControl = () => {
+ const ChatControl = () => {
     return (
          <div className={"chat"}>
             <AppHeader/>
@@ -14,3 +14,5 @@ export const ChatControl = () => {
         </div>
     )
 }
+
+export default ChatControl
