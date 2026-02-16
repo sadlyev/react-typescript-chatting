@@ -1,9 +1,8 @@
 import { useParams } from "react-router-dom"
 import { NewsPost } from "../../../api/news" 
-import { useEffect } from "react"
 import { AppHeader } from "../../CommonComp/Appheader/AppHeader"
 
-export const ProjectNews = ()=> {
+ const ProjectNews = ()=> {
 
     const {newsId} = useParams()
 
@@ -31,3 +30,5 @@ return (
 }
     
 }
+
+export default ProjectNews

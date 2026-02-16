@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import "./ProjectNewsList.css"
 import { AppHeader } from "../../CommonComp/Appheader/AppHeader"
 
-export const NewsList = () => {
+ const NewsList = () => {
     const [searhParams, setSearchParams] = useSearchParams()
 
     function  handleSearch(e: any) {
@@ -33,3 +33,5 @@ export const NewsList = () => {
         </div>
     )
 }
+
+export default NewsList
