@@ -1,7 +1,7 @@
 
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter} from "react-router-dom"
 import "./Account.css"
-import { lazy , Suspense, useEffect} from "react"
+import { lazy} from "react"
 const LazyChatControl = lazy(() => import("../ChatComponents/ChatControl/ChatControl"))
 import type {FC } from "react"
 
