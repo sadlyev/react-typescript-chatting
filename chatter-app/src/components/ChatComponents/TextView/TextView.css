@@ -18,6 +18,7 @@
   width: auto;
   height: auto;
   word-break: break-word;
+  animation: text-animate 10s linear infinite;
 }
 
 .textview_inner {
@@ -31,4 +32,26 @@
   flex-direction: column;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+@keyframes text-animate {
+  0% {
+    background-color: rgba(255, 0, 0, 0.184);
+  }
+
+  25% {
+    background-color: rgba(0, 0, 255, 0.234);
+  }
+
+  50% {
+    background-color: rgba(0, 128, 0, 0.445);
+  }
+
+  75% {
+    background-color: rgba(128, 0, 128, 0.171);
+  }
+
+  100% {
+    background-color: rgba(255, 0, 0, 0.259);
+  }
 }

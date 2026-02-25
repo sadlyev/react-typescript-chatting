@@ -7,7 +7,6 @@
   max-width: 700px;
   width: 100%;
   grid-template-columns: auto 70px; /* inputs | button */
-  grid-template-rows: auto auto;
 }
 
 .input_container {

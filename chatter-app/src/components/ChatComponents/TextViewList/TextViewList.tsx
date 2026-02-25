@@ -3,6 +3,7 @@ import { queryClient } from "../../QueryClient"
 import { FetchTextViewList } from "../../../api/notes"
 import { TextView } from "../TextView/TextView"
 import "./TextViewList.css"
+import { Loader } from "../../Animations/Loader/Loader"
 
 interface NoteProps {
     id: number,
@@ -19,6 +20,8 @@ export const TextViewList = () => {
 queryClient)
 
     switch(myQuery.status) {
+        case "pending": 
+        return (<Loader/>)
         case "success": 
         return (
             <ul className="notes_list">

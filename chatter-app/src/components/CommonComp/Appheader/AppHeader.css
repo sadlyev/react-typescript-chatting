@@ -4,6 +4,7 @@
   padding: 20px;
   color: white;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
   width: 100%;
 }
@@ -24,4 +25,10 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.header_nav {
+  color: White;
+  text-decoration: none;
+  font-size: 32px;
 }
