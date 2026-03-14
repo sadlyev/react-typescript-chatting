@@ -1,36 +1,16 @@
+Global Chatter — это веб-приложение в формате чата, созданное для отработки современных подходов к разработке на React с использованием Mock API. Проект сфокусирован на чистой архитектуре, маршрутизации, эффективном получении данных и тестировании.
 
-Global Chatter is a chat-style web application built to practice modern React development using a mock API. It focuses on clean architecture, routing, data fetching, and testing.
+Основные возможности
+Чат в реальном времени: Сообщения загружаются через Mock API.
+Клиентский роутинг: Плавная навигация без перезагрузки страниц.
+Асинхронные данные и кэширование: Оптимизированная работа с API.
+Тестирование UI: Компоненты покрыты тестами для гарантии качества.
+Адаптивный дизайн: Удобный интерфейс на любых устройствах.
 
-Features
-
-Chat messages loaded from Mock API
-Client-side routing
-Cached and async data fetching
-Tested UI components
-Responsive layout
-
-Tech Stack
-
-React
-TypeScript
-Vite
-TanStack Query
-React Router DOM
-Jest
-Mock API
-
-Getting Started
-Install dependencies
-npm install
-
-Run the project
-npm run dev
-
-Purpose
-
-This project is created for learning and demonstrating:
-Working with APIs using TanStack Query
-Routing with React Router
-Component testing with Jest
-
-Scalable project structure
+Стек технологий
+React & TypeScript
+Vite (сборка проекта)
+TanStack Query (управление состоянием данных)
+React Router DOM (маршрутизация)
+Jest (тестирование)
+Mock API (эмуляция бэкенда)
